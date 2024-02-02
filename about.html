@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width='device-width', initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
+  </head>
+  <style>
+    *{
+    margin: 0;padding: 0;box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #525252;
+    color: #fff;
+}
+.navbar{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center;
+}
+.navbar > span{
+    font-weight: bolder;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    letter-spacing: 0.10rem;
+    border-bottom: 3px solid aqua ;
+}
+.nav-items{
+    /* border:2px solid blue; */
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 1.3rem;
+    width: 20%;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    border-bottom: 1px solid aqua;
+    font-weight: bold;
+}
+
+.nav-link:hover{
+    border: 2px solid aqua;
+     border-radius: 20px;
+     box-shadow: rgba(49, 211, 233, 0.24) 11px 13px 18px;
+}
+
+main{
+    display: flex;
+    height: 100vh;
+}
+
+.left-content,.right-content{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    line-height: 2.1rem;
+}
+
+.left-content{
+    font-weight: bolder;
+    margin:30px;
+}
+
+.codeimg{
+    height: 30rem;
+    object-fit: cover;
+    padding: 2rem;
+    border:  10px solid aqua;
+    box-shadow: rgba(49, 211, 233, 0.24) 15px 15px 15px 10px;
+}
+
+
+a>button{
+    width: 25%;
+    padding: 10px;
+    border-radius: 17px;
+    border: none;
+    background-color: aqua;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+button:hover{
+    box-shadow: rgba(49, 211, 233, 0.24) 11px 13px 18px;
+
+}
+  </style>
+  <body>
+    <nav class="navbar">
+      <span> Megha's Portfolio</span>
+      <div class="nav-items">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="project.html" class="nav-link">Projects</a>
+      </div>
+    </nav>
+    <main>
+      <div class="left-content">
+        <h1 style="margin-block: 10px">Hello!😄</h1>
+        <h1 style="color: aqua">I am Megha.</h1>
+        <br />
+        <h3>
+            🌟 Hey, I'm Megha, a Delhi-based learner on a coding adventure at Navgurukul. My journey includes completing school under CBSE and currently pursuing a BCA from IGNOU. Proficient in HTML, CSS, React, Python, C, and JavaScript, I blend creativity and logic.
+            
+            🚀 With a passion for turning ideas into tangible solutions, I've showcased my skills through diverse projects. From the dynamic trio of HTML, CSS, and JavaScript to Python and C, I love crafting impactful solutions.
+            
+            💡 Beyond coding, I believe in the transformative power of technology. My portfolio reflects dedication to projects making a positive difference.
+            
+            🌐 Explore my work! If you're into tech or have a project in mind, let's connect! Find me on LinkedIn or drop an email. Ready for the next coding adventure and collaboration!
+            
+        </h3>
+        <div class="btn">
+          <a href="skills.html">
+            <button>My skills</button>
+          </a>
+        </div>
+        
+      </div>
+      <div class="right-content">
+        <img
+          class="codeimg"
+          src="https://media.istockphoto.com/id/1289411982/photo/cyber-security-web-development-and-work-in-it-concept.jpg?s=612x612&w=0&k=20&c=jfyEhPQWR71tGZwrn93sp1oP17Lcgd70StmRdDjMsAs="
+          alt=""
+        />
+      </div>
+    </main>
+  </body>
+</html>

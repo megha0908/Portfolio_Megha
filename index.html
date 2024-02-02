@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Roboto", sans-serif;
+    }
+
+    body {
+      background-color: #525252;
+      color: #fff;
+    }
+    .profile {
+      height: 100px;
+      width: 100px;
+    }
+    .displayled {
+      display: none;
+    }
+    .navbar {
+      /* border: 2px solid red; */
+      display: flex;
+      justify-content: space-between;
+      height: 5rem;
+      align-items: center;
+    }
+    .navbar > span {
+      font-weight: bolder;
+      font-size: 2.5rem;
+      margin-left: 2rem;
+      letter-spacing: 0.1rem;
+      border-bottom: 3px solid aqua;
+    }
+    .nav-items {
+      /* border:2px solid blue; */
+      width: 45%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      font-size: 1.3rem;
+      width: 20%;
+      text-align: center;
+      padding: 10px;
+      color: #fff;
+      border-bottom: 1px solid aqua;
+      font-weight: bold;
+    }
+
+    .nav-link:hover {
+      border: 2px solid aqua;
+      border-radius: 20px;
+      box-shadow: rgba(49, 211, 233, 0.24) 11px 13px 18px;
+    }
+    main {
+      display: flex;
+      height: 100vh;
+    }
+    .left,
+    .right {
+      /* border: solid blue; */
+      flex-basis: 50%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 2rem;
+      line-height: 2.1rem;
+    }
+
+    .profile-img {
+      height: 35rem;
+      width: 100%;
+      object-fit: cover;
+      padding: 2rem;
+      border: 10px solid aqua;
+      box-shadow: rgba(49, 211, 233, 0.24) 15px 15px 15px 10px;
+    }
+
+    a > button {
+      width: 25%;
+      padding: 10px;
+      border-radius: 17px;
+      border: none;
+      background-color: aqua;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    button:hover {
+      box-shadow: rgba(49, 211, 233, 0.24) 11px 13px 18px;
+    }
+
+    .icon-box > a > img {
+      height: 3.4rem;
+      margin: 8px;
+      border-radius: 50%;
+      border: 2px solid aqua;
+      padding: 5px;
+      box-shadow: rgba(49, 211, 233, 0.24) 11px 13px 18px;
+    }
+
+    @media only screen and (max-width: 870px) and (min-width: 450px) {
+      .navbar > span {
+        display: none;
+      }
+
+      .nav-items {
+        width: 100%;
+        justify-content: center;
+      }
+      .left {
+        display: flex;
+        align-items: center;
+        /* margin-top: 20px; */
+      }
+      .displayled {
+        display: block;
+      }
+      .nav-link {
+        width: auto;
+      }
+
+      main {
+        flex-direction: column;
+      }
+
+      .right {
+        display: none;
+      }
+
+      .icon-box {
+        text-align: center;
+      }
+
+      a > button {
+        width: 70%;
+      }
+    }
+  </style>
+  <body>
+    <nav class="navbar">
+      <span> Megha's Portfolio</span>
+      <div class="nav-items">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="project.html" class="nav-link">Projects</a>
+      </div>
+    </nav>
+
+    <main>
+      <div class="left">
+        <h2>Hello, Its'me</h2>
+        <div class="displayled">
+          <img
+            src="https://i.pinimg.com/474x/b3/0c/25/b30c25bddb05dad03cce62ff4152feb8.jpg"
+            alt=""
+            class="profile"
+          />
+        </div>
+        <h1 style="margin-block: 10px">Megha</h1>
+        <h2>And I'am a <span style="color: aqua">Software Developer</span></h2>
+        <p>
+          Dedicated to crafting engaging and user-friendly digital experiences.
+          With a keen eye for design and a proficiency in cutting-edge
+          technologies, I bring creativity and functionality to every project.
+          Explore my portfolio to witness my skills and browse through exciting
+          projects. I'm always open to new opportunities, so feel free to reach
+          out for collaboration or discussion. Let's create something remarkable
+          together!
+        </p>
+
+        <div class="icon-box">
+          <a href="https://github.com/megha0908">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFnh6yeXxCToGCQi8Q7e3Wk9woCmY28BvgYjYWkauCxE52j0n4XVT1v81_WIO9oElJkuw&usqp=CAU"
+              alt="github"
+            />
+          </a>
+
+          <a href="https://www.linkedin.com/in/kumari-megha-065524285/">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAbFBMVEUCdLP///8Aa6/G2+q30uUAcrIqg7sAbrHp8/hBjsAAb7EAaK2Yv9p+rNDa6/MAcLGvzeIAd7W/1+j4/P7P4u6CsdNupcxjn8mlxt/f7PR1qs/n8feOuNdRlcQ2iL7w+PtYmcYif7moyN9GkMF7pxAZAAAGNklEQVR4nO3d25KiMBAGYBKMKDgGRBAFRdf3f8dF5+QB6cZxNt1s/1VbNReL8lWEhJzw1FXKpc89y/Ka5H3/mcb7RA8hyT5OW4R1ZrX1hpFGUqW3wtgExvWJvTAm8EbXwk3k+pxenmhzKdxr1+fzC9H7b2E+RGBDzD+FxfB+ou+JindhOah7zGVMUJ6Fq9D1mfxawtVJWA7zInyPLhvhLHB9Gr+YYNYId0NpybTF7pRXh0O9z5xiwtqbD/kybC7EuecPXOh7i4ELF95o4MKRCLlHhPwjQv4RIf+IkH9EyD+9hSYMAx2Els1Tcz+h1eEur4q4qPKx1jyQfYSh3o/qrzGrSXxkMVSFF5robXI98qjWq4h+OaKFerpW91keyHcmY4VR1uI7DRuvqN+JkcLzCEd7MuJEnLADqFRFe+AKJdRVB1CpnPSoAEZot51ApcaUaw2E0OjbWuI2S8qXIkIYzACgUhvChQgLjUlB4YRwIcLC8EFNeJUV3UKEhXqOEBIe3YGFCQKoUo9sAxUU2hwjVFu+wqCrOfOdimwLHBTqBUoYk70QQWG0RAnp3mpgIeZWSrlZ86oyZCzUPkpIt0sSFsYoYUH2CQquDzGNtuYZkW9tYaco4Zhvje8F0NPhKWuylyGm5f0HISQ8vRHxfLhDCJN/dLpPBPGMj2i3/aH7I0X104whYEq4CFF9bRrqqNmQrSo8bH9pd8uNbnvmFJTQ2K4aY057IBHXq28Pj4lzQxqIHZkx3qMf6oL6ahTs6JrR7b0ZFelr8BT0CKnR0/tiXIzJA/uM49vouLjs/q7jMYNB7n5zMYxOVoVf1mm99mdbQ/se+pm+82lsoCMdNv8C4rfQr8icKP4RIf+IkH9EyD8idBXTNJle02oiJzTndmFgzTixpz+bNqL9EZWU0FgdHFazxbz+eIZpmvjLUbUa24b57IdihCYA0t7VBhx0d8pWm1Vc3j2Dnh/UltVUPznnGtNfeihm3anavvsAHLS9PiiMjnHn5KtJsdPPrKt/SY9w3TJqAY5ZzS5L3uocMZo+39yX/L8RTn4oNNG2bRJ52zflUV8jBWGY4Ga0nDPf9bwxuheaKIcnP16m56xr50KDnChwEb9X/ehaaBLcbJarlH3mCToW2gQzhn5PPOCJboXmUAP/6xERX4pOhcZ7qgRPmaM7o10KDTAu2ZkYe0d1KAz630UvkyOrfofCaPUToEqRy1jdCSvdr6K/C3LSrjthBi9UAYLbo8yd8Ml64iI+6mbjTviCoAqRtRB1JbIWoqbT8RZmiMlYvIWY+fO8hQrxjMFc+AbfTZkLEUt1mAvTwQvVFPyZ0hKmTfodkbERpn61PySB1mEyzRZ4JmL6LwnhMjf6Y9si41mrw7uNYh4FXuhBQVhuo5shFxMCG1V8BV6ATEBYtA2bGX3E/VR39IXZg16zEPcB4E4AzoXZw8fYANWPAy6xdi1cdDynRyP4eHi5jmNh3VkCBvEJYLvNsbB7YeaD2fNXAfdbdytcd/clwd/cfDfUHeVWCO1rg+j2B9veToUpNLcCs3MMVOU7FcIzeRA/U6g3yqkQXgCu4X5jaI21UyHcy4K4EI/QtexQiFgAjqgvoJ1xXAoRr52wb6yFM7g/1+7BT4Ga3i6FiFFcxFJ5ykK4FwlTXVAWIsZVjAd+CmUhYrYoYsM/aKm8Q2GK2UsjBLuk3ugKa8z4JmthiRmGh/eOISwEHg4HIJyLUIQiFKEIRShCEYpQhCIUoQhFKEIRilCEIhShCEUoQhGKUIQiFKEIRShCEYpQhCIUoQhFKEIRilCEIhShCEX4pLBtVb09QkehViOE4CJSaEcz1JsDxlDaDkrAozC7cxrwU5Kfrz88v2yiOy88qvenvGBvE+YRIf+IkH9EyD8i5B8R8o8I+UeE/NMIEbsNc472/wMhYrsmztFrL+XyDvGnYkzqqeOghUflqWLIP1NdNMI6GG4hmrBuhCrD7PbDM0GmTsLa9Xn8YtKzUI36vTSRT6LT2zHP+4X1fC8kl0Tnfc/fd0TLh0iMcvUtbEpxaDdUE33sXP+5q90iGVa1qBNfXQtVWpknXwxNL1Z71ddufRc7E6bxPtFDSLIfXexGeLP3Yrn0uWd58/ryv5KollP4mtphAAAAAElFTkSuQmCC"
+              alt="linkedin"
+            />
+          </a>
+
+          <a href="https://www.instagram.com/megha08_09/">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/768px-Instagram-Icon.png"
+              alt="instagram"
+            />
+          </a>
+
+          <a href="https://www.codechef.com/users/megha49">
+            <img
+              src="https://i.pinimg.com/originals/c5/d9/fc/c5d9fc1e18bcf039f464c2ab6cfb3eb6.jpg"
+              alt="codechef"
+            />
+          </a>
+        </div>
+        <a
+          href="https://drive.google.com/file/d/1NWtMEYaQgoimdVgiqRL2KZUBEVAm3_QJ/view?usp=sharing"
+        >
+          <button>Download Resume</button>
+        </a>
+      </div>
+      <div class="right">
+        <img
+          src="https://i.pinimg.com/474x/b3/0c/25/b30c25bddb05dad03cce62ff4152feb8.jpg"
+          alt=""
+          class="profile-img"
+        />
+      </div>
+    </main>
+  </body>
+</html>
